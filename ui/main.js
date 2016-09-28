@@ -15,7 +15,7 @@ function moveRight(){
     {
         image.style.marginLeft = marginLeft + 'px';
     }
-    else if(marginRight>=0 && marginRight<=200)
+    else
     {
         var interval2 = setInterval(moveLeft,50);    
     }
@@ -24,7 +24,12 @@ function moveRight(){
 
 function moveLeft(){
     marginRight = marginLeft - 1;
-    image.style.marginRight = marginRight + 'px';
+    
+    if(marginRight>=200 && marginRight<=600)
+    {
+        image.style.marginRight = marginRight + 'px';
+    }
+        
 }
 
 image.onclick = function(){
