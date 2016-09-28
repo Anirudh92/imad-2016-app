@@ -23,7 +23,7 @@ function moveRight(){
     }
 
 function moveLeft(){
-    marginRight = marginRight + 1;
+    marginRight = marginLeft - 1;
     image.style.marginRight = marginRight + 'px';
 }
 
