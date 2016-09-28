@@ -15,9 +15,9 @@ function moveRight(){
     {
         image.style.marginLeft = marginLeft + 'px';
     }
-    else
+    else if(marginRight>=0 && marginRight<=200)
     {
-        var interval = setInterval(moveLeft,50);    
+        var interval2 = setInterval(moveLeft,50);    
     }
     
     }
