@@ -116,7 +116,7 @@ app.get('/submit-name',function(req,res){
     //get the name from the request object
     var name = req.query.name;
     
-    names.push(name);//TODO
+    names.push(name);
     //JSON
     res.send(JSON.stringify(names));
     
