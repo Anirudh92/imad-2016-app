@@ -153,6 +153,7 @@ app.get('/submit-name',function(req,res){
 });
 app.get('/article/:articleName',function(req,res){
     
+   //$1 used for setting "\" in a query to protect it from SQL injection attacks, $1 displays the first element in the array
    
    pool.query("SELECT * FROM article WHERE title = $1",[req.params.articleName], function(err, result){
        if(err){
