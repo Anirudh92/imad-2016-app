@@ -99,7 +99,7 @@ var HtmlTemplate = `
         </h3>
         
         <div>
-            ${date}    
+            ${date.toDateString()}    
         </div>
         
         <div>
